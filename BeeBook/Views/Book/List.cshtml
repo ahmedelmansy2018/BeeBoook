@@ -1,0 +1,9 @@
+﻿@model BooksListViewModel
+
+
+<h1>@Model.CurrentCategory</h1>
+
+@foreach (var Book in Model.Books)
+{
+    <partial name="_BookCard" model="Book" />
+}
